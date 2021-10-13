@@ -1,0 +1,52 @@
+:root {
+    --first-color: rgb(73, 155, 248);
+    --second-color: rgb(106, 160, 106);
+    --third-color: rgb(26, 25, 26);
+    --fourth-color: rgb(3, 28, 58);
+}
+
+* {
+    margin: 5;
+    padding: 5;
+    box-sizing: border-box;
+}
+
+/*style body*/
+body {
+    color: var(--third-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/*style header*/
+header {
+    padding: 20px 35px; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--fourth-color);
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+header nav {
+    margin: 60px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 10px 15px; 
+    font-weight: lighter; 
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgb(3, 3, 3);
+}
