@@ -3,6 +3,7 @@
     --second-color: rgb(106, 160, 106);
     --third-color: rgb(26, 25, 26);
     --fourth-color: rgb(3, 28, 58);
+    --fifth-color: white;
 }
 
 * {
@@ -29,7 +30,7 @@ header {
 header h1 {
     font-size: 60px;
     font-weight: bold;
-    color: white;
+    color: var(--fifth-color);
 }
 
 header nav {
@@ -50,3 +51,23 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgb(3, 3, 3);
 }
+
+.about-me img {
+    width: 25%
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: var(--fourth-color);
+    color: var(--fifth-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
