@@ -29,7 +29,11 @@ THEN I am presented with a responsive layout that adapts to my viewport
 *CSS
 
 ## Website Link
+https://kgcan.github.io/Module-2-Challenge/
 
-## GitHub Link
+## GitHub Repository URL
+https://github.com/KGCan/Module-2-Challenge.git
 
 
+## Screenshot
+![Challenge2ScreenGrab](https://user-images.githubusercontent.com/88002224/137565013-9f66ac42-921d-4ac1-827a-14b910f61069.PNG)
