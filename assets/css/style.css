@@ -1,14 +1,15 @@
 :root {
-    --first-color: rgb(73, 155, 248);
+    --first-color: #81ecec;
     --second-color: rgb(106, 160, 106);
     --third-color: rgb(26, 25, 26);
     --fourth-color: rgb(3, 28, 58);
     --fifth-color: white;
+    --sixth-color: rgb(243, 230, 213);
 }
 
 * {
-    margin: 5;
-    padding: 5;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -28,15 +29,22 @@ header {
 }
 
 header h1 {
-    font-size: 60px;
+    padding: 30px 0 30px 0;
+    font-size: 50px;
     font-weight: bold;
     color: var(--fifth-color);
+    background-color: var(--fourth-color);
+    text-decoration: underline;
 }
 
 header nav {
     margin: 60px 0;
+    align-items: center
 }
 
+header a {
+    color: var(--fifth-color);
+}
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -51,15 +59,115 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgb(3, 3, 3);
 }
+/*end header styles*/
+
+/*about me styles**/
 
 .about-me img {
-    width: 25%
+    width: 15%;
+    position: center;
+    border-radius: 50px;
+    padding: 10px;
 }
 
+.about-me h1 {
+    font-weight: bold;
+    font-size: 50px;
+    padding: 20px 30px 30px 20px;
+    background-color: var(--fourth-color);
+    color: var(--fifth-color);
+}
 .about-me {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: none;
     justify-content: space-between;
+    padding: 20px 0 10px 0;
+    text-align: center;
+    background-color: var(--fifth-color);
+}
+
+.about-me p {
+    text-align: center;
+    padding: 40px 10px 0 10px;
+}
+
+/*end about me styles*/
+
+/*my work styles*/
+
+.my-work h1 {
+    font-weight: bold;
+    font-size: 50px;
+    padding: 20px 30px 30px 20px;
+    background-color: var(--fourth-color);
+}
+.pacificdraftworks img {
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+    border: 10px solid var(--fourth-color);
+    border-radius: 20px;
+    background-color: var(--third-color)
+}
+
+.runbuddy img {
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+    border: 10px solid var(--fourth-color);
+    border-radius: 20px;
+}
+
+.robotwars img {
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+    border: 10px solid var(--fourth-color);
+    border-radius: 20px;
+}
+
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    background-color: var(--fifth-color);
+    color: var(--fifth-color);
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: none;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    background-color: var(--fourth-color);
+    color: var(--fifth-color)
+}
+
+.social-media h1 {
+    font-weight: bold;
+    font-size: 50px;
+    padding: 20px 30px 30px 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
 }
 
 footer {
@@ -68,6 +176,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0 20px 0;
+    font-size: 10px;
 
 }
 
