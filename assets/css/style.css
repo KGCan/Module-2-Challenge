@@ -10,7 +10,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /*style body*/
@@ -63,9 +62,16 @@ header nav ul li a {
 
 /*about me styles**/
 
-.about-me img {
+.my-photo {
+    display:flex;
+    flex-wrap: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-photo img {
     width: 15%;
-    position: center;
     border-radius: 50px;
     padding: 10px;
 }
@@ -76,7 +82,12 @@ header nav ul li a {
     padding: 20px 30px 30px 20px;
     background-color: var(--fourth-color);
     color: var(--fifth-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
 }
+
 .about-me {
     display: flex;
     flex-wrap: none;
@@ -84,11 +95,13 @@ header nav ul li a {
     padding: 20px 0 10px 0;
     text-align: center;
     background-color: var(--fifth-color);
+    flex-direction: column;
 }
 
-.about-me p {
+.about-me-paragraph {
     text-align: center;
-    padding: 40px 10px 0 10px;
+    padding: 40px 10px 30px 10px;
+    font-size: 25px;
 }
 
 /*end about me styles*/
@@ -100,38 +113,61 @@ header nav ul li a {
     font-size: 50px;
     padding: 20px 30px 30px 20px;
     background-color: var(--fourth-color);
+    color: var(--fifth-color)
 }
-.pacificdraftworks img {
-    width: 50%;
+
+.cards img {
+    width: 30%;
     margin: 10px;
     padding: 5px;
     border: 10px solid var(--fourth-color);
     border-radius: 20px;
-    background-color: var(--third-color)
+    box-sizing: border-box;
 }
 
-.runbuddy img, .robotwars img, .css img, .javascript img {
-    width: 50%;
-    margin: 10px;
-    padding: 5px;
-    border: 10px solid var(--fourth-color);
-    border-radius: 20px;
-}
-
-.my-work {
+.cards {
+    flex: 1 0 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px 0 10px 0;
+    flex-direction: row;
+    padding: 30px;
     text-align: center;
-    background-color: var(--fifth-color);
-    color: var(--fifth-color);
+    border-style: solid;
+    border-width: 1px;
+    justify-content: space-evenly;
+    align-content: space-around;
+    border: solid 10px var(--fourth-color)
 }
 
-.my-work h1 {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+.robotwars {
+    margin: 30px;
 }
+
+.css {
+    margin: 30px;
+}
+
+.pacificdraftworks:hover{
+    opacity: 10%;
+}
+
+.robotwars:hover {
+    opacity: 10%;
+}
+
+.runbuddy:hover {
+    opacity: 10%
+}
+
+.css:hover {
+    opacity: 10%;
+}
+
+.javascript:hover {
+    opacity: 10%;
+}
+
+
 
 /*end of my work section*/
 
@@ -148,6 +184,19 @@ header nav ul li a {
     flex-direction: row;
 }
 
+.contact-me nav ul li {
+    font-weight: bolder;
+    font-size: 2vw;
+    text-shadow: 0 0 10px rgb(3, 3, 3)
+}
+
+.contact-me nav ul li a {
+    margin: 10px 15px; 
+    font-weight: lighter; 
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgb(3, 3, 3);
+    color: var(--first-color);
+}
 /*footer styles*/
 
 footer {
@@ -162,3 +211,11 @@ footer {
 }
 
 /*end footer styles*/
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  
