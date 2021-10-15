@@ -4,12 +4,12 @@
     --third-color: rgb(26, 25, 26);
     --fourth-color: rgb(3, 28, 58);
     --fifth-color: white;
-    --sixth-color: rgb(243, 230, 213);
 }
 
 * {
     margin: 0;
     padding: 0;
+    background-color: var(--sixth-color)
 }
 
 /*style body*/
@@ -68,6 +68,7 @@ header nav ul li a {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    background-color: var(--fourth-color)
 }
 
 .my-photo img {
@@ -102,6 +103,7 @@ header nav ul li a {
     text-align: center;
     padding: 40px 10px 30px 10px;
     font-size: 25px;
+    border: solid 40px var(--fourth-color)
 }
 
 /*end about me styles*/
@@ -113,11 +115,12 @@ header nav ul li a {
     font-size: 50px;
     padding: 20px 30px 30px 20px;
     background-color: var(--fourth-color);
-    color: var(--fifth-color)
+    color: var(--fifth-color);
+    text-align: center;
 }
 
 .cards img {
-    width: 30%;
+    width: 40%;
     margin: 10px;
     padding: 5px;
     border: 10px solid var(--fourth-color);
@@ -136,38 +139,32 @@ header nav ul li a {
     border-width: 1px;
     justify-content: space-evenly;
     align-content: space-around;
-    border: solid 10px var(--fourth-color)
+    border: solid 40px var(--fourth-color)
 }
 
-.robotwars {
-    margin: 30px;
+#pacificdraftworks{
+    width: 60%;
 }
 
-.css {
-    margin: 30px;
-}
-
-.pacificdraftworks:hover{
+#pacificdraftworks:hover{
     opacity: 10%;
 }
 
-.robotwars:hover {
+#robotwars:hover {
     opacity: 10%;
 }
 
-.runbuddy:hover {
+#runbuddy:hover {
     opacity: 10%
 }
 
-.css:hover {
+#css:hover {
     opacity: 10%;
 }
 
-.javascript:hover {
-    opacity: 10%;
+#javascript:hover {
+        opacity: 10%;
 }
-
-
 
 /*end of my work section*/
 
@@ -210,12 +207,4 @@ footer {
     flex-direction: column;
 }
 
-/*end footer styles*/
-
-@media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
-  }
-  
+/*end footer styles*/  
