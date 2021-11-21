@@ -158,6 +158,10 @@ header nav ul li a {
     opacity: 10%
 }
 
+#lyrical:hover {
+    opacity: 10%
+}
+
 #css:hover {
     opacity: 10%;
 }
