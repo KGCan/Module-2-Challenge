@@ -162,6 +162,10 @@ header nav ul li a {
     opacity: 10%
 }
 
+#walknspot:hover{
+    opacity: 10%
+}
+
 #css:hover {
     opacity: 10%;
 }
